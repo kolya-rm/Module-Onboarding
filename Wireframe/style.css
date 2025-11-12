@@ -90,7 +90,7 @@ article {
   }
 }
 
-a.read-more {
+.read-more {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
