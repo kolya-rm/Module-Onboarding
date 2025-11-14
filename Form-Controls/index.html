@@ -23,22 +23,30 @@
           add data validation and requirment attribute -->
         <fieldset>
           <legend>Customer</legend>
-          <label for="user">Name:</label>
-          <input
-            type="text"
-            id="user"
-            name="user-name"
-            placeholder="Your name"
-            title="String contains letters and spaces min length 2 characters"
-            pattern="^([a-zA-Z ]{2,})$"
-            required
-          />
+          <p>
+            <label for="user">Name:</label>
+            <input
+              type="text"
+              id="user"
+              name="user-name"
+              placeholder="Your name"
+              title="String contains letters and spaces min length 2 characters"
+              pattern="^([a-zA-Z ]{2,})$"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="user-mail"
+              placeholder="mail@example.com"
+            />
+          </p>
         </fieldset>
         <!-- add t-shirts details section add input selectors for colour 
          and size of t-shirts with required attribute -->
-         <button type="submit">
-          submit
-         </button>
       </form>
     </main>
     <footer>
