@@ -22,7 +22,8 @@ As well as useful links to learn more */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
-  --container: 1280px;
+  --container: 70%;
+  --footer: 100%;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -30,11 +31,6 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-}
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
 }
 img,
 svg {
@@ -45,6 +41,10 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header{
+  text-align: center;
+  padding-bottom: calc(var(--space) * 2);
+}
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
@@ -53,6 +53,8 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  width: var(--footer);
+  background-color: var(--paper);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +88,10 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+.read-more {
+  padding: var(--space);
+  border: var(--line);
+  max-width: fit-content;
 }
